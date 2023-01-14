@@ -1,0 +1,378 @@
+html{
+    scroll-behavior: smooth;
+}
+/* home section  */
+body,.body-color{
+background-color:#f5f5f5
+}
+#home{
+    height: 100vh;
+    background-image: url(../image/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.dark-layer{
+    height: inherit;
+    background-color: rgba(0,0,0,.5);
+}
+nav{
+    background-color: rgba(0,0,0,.8) ;
+}
+.fa-align-justify{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: white;
+    font-size: 25px;
+}
+.navbar-brand{
+    color: white !important;
+    font-size:28px;
+    font-weight:600;
+} 
+.navbar-nav .nav-link{
+    color: white !important;
+    font-weight: 600;
+}
+ .navbar-nav .nav-item{
+    padding:10px 0  0 15px;
+    position: relative;
+}
+.navbar-nav a.nav-link::before{
+    overflow: hidden;
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+    transition: all 1s;
+}
+.navbar-nav a.nav-link:hover::before{
+    width: 60%;
+}
+.navbar-nav a.active::before{
+    content: "";
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+}
+.dropdown-item:hover{
+    color:blue ;
+    background-color: transparent;
+} 
+header h1{
+    font-size:4.5rem ;
+    color: white;
+}
+/* about sectoion */
+#about .container{
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+}
+.my-info , .skill{
+    font-size: 1.1rem;
+    font-weight:600;
+    margin-bottom: 1rem;
+}
+.prograss-bar{
+    margin-bottom: 10px ;
+    width: 100%;
+    height: 10px;
+    background-color: #cde1f8;
+}
+.html ,.css , .php ,.javascript{
+    position: relative;
+}
+.html::before , .css::before ,.php::before ,.javascript::before{
+    content: "";
+    background-color: #0078ff;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+} 
+.html::before{
+    width: 85%;
+}
+.css::before {
+    width: 75%;
+}
+.php::before{
+    width: 50%;
+}
+.javascript::before{
+    width: 90%;
+}
+.about-me h3{
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+.about-me h3::before{
+    content: "";
+    background-color: #0078ff;
+    height: 3px;
+    width: 25%;
+    position: absolute;
+    bottom: -10;
+}
+.about-me p {
+font-size: 1.2rem;
+color: #636772;
+font-weight:300
+}
+
+/* serviecs section */
+#services{
+    background-image: url(../image/counters-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+.heading h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    background-color: #0078ff;
+    height: 5px;
+    width: 5%;
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+.services-div{
+    border-radius: 20px;
+    margin-bottom:48px ;
+}
+.services-icon{
+    font-size: 38px;
+    border:10px solid #0078ff;
+    border-radius: 50%;
+    padding: 30px 30px;
+   transition: all 1s;
+     
+}
+.services-icon:hover{
+    color: white;
+    border-color: #cde1f8;
+    background-color: #0078ff;
+}
+.transparent-part{
+    padding: 8rem 0;
+    color: rgb(0, 0, 255);
+    background-color:rgba(0, 0, 255, 0.5) ;
+    color: white;
+}
+.trans-icon{
+    color: white;
+    font-size: 32px;
+    border:10px solid #cde1f8;
+    border-radius: 50%;
+    padding: 25px 25px;
+   transition: all 1s;  
+}
+.fa-award{
+    padding: 25px 30px;
+}
+.fa-user-friends{
+    padding: 27px 25px;
+}
+.transparent-part .cont{
+    padding: 5px;
+    font-size: 2rem;
+    color: white;
+    display: block;
+}
+.work-img{
+    transition: all 2s;
+}
+.work-img:hover{
+    transform: scale(1.5);
+}
+/* section work  */
+#work{
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.fa-plus{
+    color: blue;
+    border: 3px solid blue;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+#work h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#work .row p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.wep-decor{
+    color:#0078ff;
+}
+
+
+.slider-part{
+    padding :8rem 0;
+    /* height: 85%; */
+    background-color: rgba(7, 7, 187, 0.5);
+}
+.carousel-indicators {
+    bottom: -20%;
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.slider-part .carousel-inner p ,.carousel-item  p{
+    margin: 10px auto ; 
+    max-width:60%;
+    color: white;
+    font-size: 1.1rem;
+}
+.slider-part .name {
+    font-size: 2rem;
+    color: white;
+}
+#blog .card .card-body{
+    position: relative;
+}
+#blog .card-title::before{
+    content: "TRAVE";
+    font-size: .8rem;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding:10px;
+    width: 30%;
+    height: 40px;
+    background-color: blue;
+    position: absolute;
+    top: -25;
+    right:35%;     
+}
+#blog .card-footer .text-muted img{
+width: 10% !important;
+}
+
+#blog .card-footer  .minute {
+    position: relative;
+}
+#blog .card-footer  a{
+    color:#6c7767;
+    transition:all 1s;
+}
+#blog .card-footer  a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+/* section contact */
+#contact{
+    height:inherit !important;
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+#contact .color-layer{
+    height:inherit !important;
+    padding: 10rem 0 0 0 !important;
+    background-color:rgba(0, 0, 255, 0.5) !important  ;
+
+}
+#contact .contact-heading  {
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    padding: 45px 0;
+
+}
+#contact .contact-heading::before {
+    content: "";
+    font-size: 25px;
+    width: 35%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    bottom: 25;
+
+}
+#contact .btn-primary{
+    padding: 13px 30px;
+    border: 4px solid transparent;
+    border-radius: 30px;
+    transition: all 1s ;
+}
+#contact .btn-primary:hover{
+    background-color: rgb(37, 37, 170);
+    border-color: rgb(211, 211, 211);
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3) ;
+}
+.form-group{
+    padding: 10px 0;
+}
+.paragraph{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 12px 0 0  0;
+
+}
+#contact .list-group-item{
+    border: none !important;    
+    padding: 12px 0 12px  0;
+
+}
+#contact .list-group-item span{
+    color: blue;
+    padding: 0 30px 0  0;
+}
+.linked i{
+    width: 44px;
+    height: 44px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin: 5px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 1s;
+} 
+.linked i:hover{
+    background-color: blue;
+    color: white;
+    border-color:rgb(207, 209, 221) ;
+}
+.color-layer .shadow-lg{
+    box-shadow: 0rem  0rem 1rem rgba(0,0,0,.2)!important
+}
+footer{
+    color: white;}
+footer span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width:540px) {
+    .container{
+        width:90% !important;
+    }
+    .slider-part .carousel-inner p ,.carousel-item  p{
+        max-width:100%;}
+        h1{
+            font-size: 2rem !important;
+        }
+}
